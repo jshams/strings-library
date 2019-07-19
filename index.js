@@ -1,3 +1,7 @@
+String.prototype.isLetter = function () {
+    return (this.length === 1 && this.match(/[a-z]/i));
+}
+
 //// CAPITALIZE ////
 String.prototype.firstCharToUpper = function () {
     if (this.length == 0) return ''
@@ -11,7 +15,7 @@ String.prototype.allCaps = function () {
 
 //// CAPITALIZE WORDS ////
 String.prototype.allfirstCharsToUpper = function () {
-    return this.split(' ').map(word => word.firstCharToUpper().join(' '))
+    return this.split(' ').map(word => word.firstCharToUpper()).join(' ')
 }
 
 //// ODD CAPS ////
@@ -19,7 +23,7 @@ String.prototype.upperEveryOtherLetter = function () {
     let new_str = ''
     let skip = false
     for (letter of this) {
-        if (isLetter(letter)) {
+        if (letter.isLetter()) {
             if (skip) skip = false
             else {
                 letter = letter.toUpperCase()
