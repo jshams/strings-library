@@ -1,5 +1,5 @@
 String.prototype.isLetter = function () {
-    return (this.length === 1 && this.match(/[a-z]/i));
+    return ((this.length === 1 && this.match(/[a-z]/i)) ? true : false)
 }
 
 //// CAPITALIZE ////
