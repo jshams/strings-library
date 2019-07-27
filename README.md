@@ -1,6 +1,7 @@
 # Strings Library
 ![npm](https://img.shields.io/npm/v/strings-library.svg?style=plastic)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/strings-library.svg?style=plastic)
+[![Build Status](https://travis-ci.com/jshams/strings-library.svg?branch=master)](https://travis-ci.com/jshams/strings-library)
 
 ## Description
 
