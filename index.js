@@ -39,7 +39,6 @@ String.prototype.upperEveryOtherLetter = function () {
 String.prototype.removeWhiteSpace = function () {
     let space = true
     let removedSpaces = ''
-    let i = 1
     for (letter of this) {
         if ((letter != ' ') || (!space)) {
             removedSpaces += letter
