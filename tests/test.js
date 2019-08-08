@@ -62,3 +62,37 @@ test('upperEveryOtherLetter', () => {
     result = 'this!is!!awesome'.upperEveryOtherLetter()
     expect(result).toBe('ThIs!Is!!AwEsOmE')
 })
+
+test('removeWhiteSpace', () => {
+    let result;
+    result = ' hello   '.removeWhiteSpace()
+    expect(result).toBe('hello')
+    result = '    hi   my    name    is     Jake      '.removeWhiteSpace()
+    expect(result).toBe('hi my name is Jake')
+})
+
+test('kabobCase', () => {
+    let result;
+    result = 'kabob case'.kabobCase()
+    expect(result).toBe('kabob-case')
+    result = 'my name is jeff'.kabobCase()
+    expect(result).toBe('my-name-is-jeff')
+})
+
+test('snakeCase', () => {
+    let result;
+    result = 'snake case'.snakeCase()
+    expect(result).toBe('snake_case')
+    result = 'my name is jeff'.snakeCase()
+    expect(result).toBe('my_name_is_jeff')
+})
+
+test('camelCase', () => {
+    let result;
+    result = 'camel case'.camelCase()
+    expect(result).toBe('camelCase')
+    result = 'my name is jeff'.camelCase()
+    expect(result).toBe('myNameIsJeff')
+})
+
+
